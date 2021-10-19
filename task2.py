@@ -9,9 +9,15 @@ return: float value of the largest number
 Sample assertions:
 assert largest([3,10,3]) == 10
 """
-
-def largest():
+def largest(x):
     pass
-    return
+    x = list(x)
+    sortedx = sorted(x)
+    biggestx = (max(sortedx))
+    return biggestx
 
-assert largest([3,10,3]) == 10
+
+if __name__ == "__main__":
+    x = input("enter list of values")
+    print(largest(x))
+    assert largest([10,50,100,3000.1]) == 3000.1
