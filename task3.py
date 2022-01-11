@@ -20,12 +20,12 @@ def hypotenuse(x,y):
     yx = xy ** (1/2)
     return yx
 
-x = input("enter short side of triangle")
-y = input("enter short side of triangle")
+x = input("the lenght of one side of a right triangle")
+y = input("the lenght of the other side of a right triangle")
 print(hypotenuse(x,y))
 
 if __name__ == "__main__":
-    x = input("enter short side of triangle")
-    y = input("enter short side of triangle")
+    x = input("the lenght of one side of a right triangle")
+    y = input("the lenght of the other side of a right triangle")
     print(hypotenuse(x,y))
 assert hypotenuse(6,8) == 10
